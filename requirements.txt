@@ -7,3 +7,4 @@ ipython
 scipy
 ipywidgets
 mpld3
+os
