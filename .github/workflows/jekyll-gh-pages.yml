@@ -34,6 +34,15 @@ jobs:
       run: |
         pip install -r requirements.txt
 
+    # Build the book
+    #- name: Build the book
+     # run: |
+     #   jupyter-book build --all .
+
+    # (opcional) Cache de notebooks ejecutados
+    - name: Crear carpeta de cache
+      run: mkdir -p _build/.jupyter_cache
+
     # (optional) Cache your executed notebooks between runs
     # if you have config:
     # execute:
