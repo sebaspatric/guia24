@@ -1,0 +1,145 @@
+Traceback (most recent call last):
+  File "c:\Users\sebas\.virtualenvs\Cursos-BcIQd_0n\Lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
+    executenb(
+  File "c:\Users\sebas\.virtualenvs\Cursos-BcIQd_0n\Lib\site-packages\nbclient\client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\sebas\.virtualenvs\Cursos-BcIQd_0n\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\sebas\.virtualenvs\Cursos-BcIQd_0n\Lib\site-packages\nbclient\client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "c:\Users\sebas\.virtualenvs\Cursos-BcIQd_0n\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "c:\Users\sebas\.virtualenvs\Cursos-BcIQd_0n\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import numpy as np
+import plotly.graph_objects as go
+
+# Valores iniciales
+n_max_init = 100
+const_init = 4
+
+n_values = np.arange(1, n_max_init+1)
+a_n = const_init + (n_values + 1) / (2 * n_values)
+
+# Crear figura
+fig = go.Figure()
+
+# Curva inicial
+fig.add_trace(go.Scatter(
+    x=n_values,
+    y=a_n,
+    mode='lines+markers',
+    name='aₙ = const + (n+1)/(2n)',  # subíndice con Unicode
+    marker=dict(size=6)
+))
+
+# Línea del límite
+fig.add_trace(go.Scatter(
+    x=[1, n_max_init],
+    y=[const_init + 0.5, const_init + 0.5],
+    mode='lines',
+    line=dict(dash='dash', color='red'),
+    name=f'lim aₙ = {const_init + 0.5}'
+))
+
+# --- Sliders ---
+n_slider_values = np.arange(10, 201, 5)
+const_slider_values = np.arange(0, 10.1, 0.1)
+
+# Slider n_max
+steps_n = []
+for n_max in n_slider_values:
+    n_vals = np.arange(1, n_max+1)
+    a_vals = const_init + (n_vals + 1)/(2*n_vals)
+    steps_n.append(dict(
+        method='update',
+        label=str(n_max),
+        args=[{'x':[n_vals, [1, n_max]], 'y':[a_vals, [const_init+0.5]*2]}]
+    ))
+
+# Slider constante
+steps_const = []
+for c in const_slider_values:
+    a_vals = c + (n_values + 1)/(2*n_values)
+    steps_const.append(dict(
+        method='update',
+        label=str(round(c,1)),
+        args=[{'y':[a_vals, [c+0.5]*len(n_values)]},
+              {'annotations':[dict(x=n_max_init/2, y=max(a_vals)+0.5, text=f"Gráfica de la sucesión aₙ", showarrow=False, font=dict(size=20))]}]
+    ))
+
+sliders = [
+    dict(active=int((n_max_init-10)/5), currentvalue={"prefix":"n_max = "}, pad={"t":50}, steps=steps_n, x=0, xanchor='left', y=-0.15, len=0.48),
+    dict(active=int(const_init*10), currentvalue={"prefix":"const = "}, pad={"t":50}, steps=steps_const, x=0.52, xanchor='left', y=-0.15, len=0.48)
+]
+
+# Layout
+fig.update_layout(
+    sliders=sliders,
+    title="Gráfica de la sucesión aₙ",  # título con subíndice Unicode
+    xaxis_title="n",
+    yaxis_title="aₙ",
+    template="plotly_white",
+    margin=dict(b=150)
+)
+
+# Guardar HTML interactivo
+fig.write_html("/_static/sucesion_interactiva.html", include_plotlyjs="cdn")
+fig.show()
+
+
+------------------
+
+
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mFileNotFoundError[0m                         Traceback (most recent call last)
+Cell [1;32mIn[3], line 74[0m
+[0;32m     64[0m fig[38;5;241m.[39mupdate_layout(
+[0;32m     65[0m     sliders[38;5;241m=[39msliders,
+[0;32m     66[0m     title[38;5;241m=[39m[38;5;124m"[39m[38;5;124mGráfica de la sucesión aₙ[39m[38;5;124m"[39m,  [38;5;66;03m# título con subíndice Unicode[39;00m
+[1;32m   (...)[0m
+[0;32m     70[0m     margin[38;5;241m=[39m[38;5;28mdict[39m(b[38;5;241m=[39m[38;5;241m150[39m)
+[0;32m     71[0m )
+[0;32m     73[0m [38;5;66;03m# Guardar HTML interactivo[39;00m
+[1;32m---> 74[0m [43mfig[49m[38;5;241;43m.[39;49m[43mwrite_html[49m[43m([49m[38;5;124;43m"[39;49m[38;5;124;43m/_static/sucesion_interactiva.html[39;49m[38;5;124;43m"[39;49m[43m,[49m[43m [49m[43minclude_plotlyjs[49m[38;5;241;43m=[39;49m[38;5;124;43m"[39;49m[38;5;124;43mcdn[39;49m[38;5;124;43m"[39;49m[43m)[49m
+[0;32m     75[0m fig[38;5;241m.[39mshow()
+
+File [1;32mc:\Users\sebas\.virtualenvs\Cursos-BcIQd_0n\Lib\site-packages\plotly\basedatatypes.py:3712[0m, in [0;36mBaseFigure.write_html[1;34m(self, *args, **kwargs)[0m
+[0;32m   3609[0m [38;5;250m[39m[38;5;124;03m"""[39;00m
+[0;32m   3610[0m [38;5;124;03mWrite a figure to an HTML file representation[39;00m
+[0;32m   3611[0m 
+[1;32m   (...)[0m
+[0;32m   3708[0m [38;5;124;03mNone[39;00m
+[0;32m   3709[0m [38;5;124;03m"""[39;00m
+[0;32m   3710[0m [38;5;28;01mimport[39;00m[38;5;250m [39m[38;5;21;01mplotly[39;00m[38;5;21;01m.[39;00m[38;5;21;01mio[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[38;5;21;01mpio[39;00m
+[1;32m-> 3712[0m [38;5;28;01mreturn[39;00m [43mpio[49m[38;5;241;43m.[39;49m[43mwrite_html[49m[43m([49m[38;5;28;43mself[39;49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[43margs[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m
+
+File [1;32mc:\Users\sebas\.virtualenvs\Cursos-BcIQd_0n\Lib\site-packages\plotly\io\_html.py:503[0m, in [0;36mwrite_html[1;34m(fig, file, config, auto_play, include_plotlyjs, include_mathjax, post_script, full_html, animation_opts, validate, default_width, default_height, auto_open, div_id)[0m
+[0;32m    500[0m [38;5;66;03m# Write HTML string[39;00m
+[0;32m    501[0m [38;5;28;01mif[39;00m path [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m:
+[0;32m    502[0m     [38;5;66;03m# To use a different file encoding, pass a file descriptor[39;00m
+[1;32m--> 503[0m     [43mpath[49m[38;5;241;43m.[39;49m[43mwrite_text[49m[43m([49m[43mhtml_str[49m[43m,[49m[43m [49m[38;5;124;43m"[39;49m[38;5;124;43mutf-8[39;49m[38;5;124;43m"[39;49m[43m)[49m
+[0;32m    504[0m [38;5;28;01melse[39;00m:
+[0;32m    505[0m     file[38;5;241m.[39mwrite(html_str)
+
+File [1;32mC:\Python312\Lib\pathlib.py:1047[0m, in [0;36mPath.write_text[1;34m(self, data, encoding, errors, newline)[0m
+[0;32m   1044[0m     [38;5;28;01mraise[39;00m [38;5;167;01mTypeError[39;00m([38;5;124m'[39m[38;5;124mdata must be str, not [39m[38;5;132;01m%s[39;00m[38;5;124m'[39m [38;5;241m%[39m
+[0;32m   1045[0m                     data[38;5;241m.[39m[38;5;18m__class__[39m[38;5;241m.[39m[38;5;18m__name__[39m)
+[0;32m   1046[0m encoding [38;5;241m=[39m io[38;5;241m.[39mtext_encoding(encoding)
+[1;32m-> 1047[0m [38;5;28;01mwith[39;00m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mopen[49m[43m([49m[43mmode[49m[38;5;241;43m=[39;49m[38;5;124;43m'[39;49m[38;5;124;43mw[39;49m[38;5;124;43m'[39;49m[43m,[49m[43m [49m[43mencoding[49m[38;5;241;43m=[39;49m[43mencoding[49m[43m,[49m[43m [49m[43merrors[49m[38;5;241;43m=[39;49m[43merrors[49m[43m,[49m[43m [49m[43mnewline[49m[38;5;241;43m=[39;49m[43mnewline[49m[43m)[49m [38;5;28;01mas[39;00m f:
+[0;32m   1048[0m     [38;5;28;01mreturn[39;00m f[38;5;241m.[39mwrite(data)
+
+File [1;32mC:\Python312\Lib\pathlib.py:1013[0m, in [0;36mPath.open[1;34m(self, mode, buffering, encoding, errors, newline)[0m
+[0;32m   1011[0m [38;5;28;01mif[39;00m [38;5;124m"[39m[38;5;124mb[39m[38;5;124m"[39m [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m mode:
+[0;32m   1012[0m     encoding [38;5;241m=[39m io[38;5;241m.[39mtext_encoding(encoding)
+[1;32m-> 1013[0m [38;5;28;01mreturn[39;00m [43mio[49m[38;5;241;43m.[39;49m[43mopen[49m[43m([49m[38;5;28;43mself[39;49m[43m,[49m[43m [49m[43mmode[49m[43m,[49m[43m [49m[43mbuffering[49m[43m,[49m[43m [49m[43mencoding[49m[43m,[49m[43m [49m[43merrors[49m[43m,[49m[43m [49m[43mnewline[49m[43m)[49m
+
+[1;31mFileNotFoundError[0m: [Errno 2] No such file or directory: '\\_static\\sucesion_interactiva.html'
+

@@ -1,0 +1,16 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: Calculo2024ej1 #con titulo
+  title: "Ejercicio 1"
+- file: Calculo2024ej2
+  title: "Ejercicio 2"
+- file: Calculo2024ej3
+  title: "Ejercicio 3"
+- file: Calculo2024ej4
+  title: "Ejercicio 4"
+- file: Calculo2024ej5
+  title: "Ejercicio 5"
