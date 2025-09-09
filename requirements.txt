@@ -9,4 +9,3 @@ ipywidgets
 mpld3
 sphinx
 sphinx-book-theme
-#fractions
