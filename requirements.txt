@@ -7,4 +7,5 @@ ipython
 scipy
 ipywidgets
 mpld3
-os
+sphinx
+sphinx-book-theme
