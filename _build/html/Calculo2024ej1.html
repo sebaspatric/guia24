@@ -382,15 +382,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pregunta1-limite-sucesion">Pregunta1: limite sucesión</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#desarrollo">Desarrollo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pregunta1-limite-sucesion">Pregunta1: limite sucesión</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#desarrollo">Desarrollo</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-del-limite"><strong>Cálculo del límite</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#respuesta"><strong>Respuesta:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos">Gráficos</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico-limite-sucesion">grafico límite sucesión</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico-sucesion-interactivo">grafico sucesión interactivo</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-la-grafica">Interpretación de la gráfica</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codigos">Codigos</a></li>
 </ul>
             </nav>
         </div>
@@ -410,9 +414,10 @@ document.write(`
 $<span class="math notranslate nohighlight">\(
 a_n = \frac{4 + \frac{1}{n} + 4 + \frac{2}{n} + \cdots + 4 + \frac{n}{n}}{n}
 \)</span>$</p>
+</section>
 <hr class="docutils" />
 <section id="desarrollo">
-<h3>Desarrollo<a class="headerlink" href="#desarrollo" title="Link to this heading">#</a></h3>
+<h2>Desarrollo<a class="headerlink" href="#desarrollo" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Cada término del numerador es de la forma</p>
 <div class="math notranslate nohighlight">
@@ -451,7 +456,6 @@ a_n = \frac{4n + \tfrac{n+1}{2}}{n}.
 \[
 a_n = 4 + \frac{n+1}{2n}.
 \]</div>
-</section>
 <hr class="docutils" />
 <section id="calculo-del-limite">
 <h3><strong>Cálculo del límite</strong><a class="headerlink" href="#calculo-del-limite" title="Link to this heading">#</a></h3>
@@ -473,11 +477,69 @@ a_n = 4 + \frac{n+1}{2n}.
 <h3><strong>Respuesta:</strong><a class="headerlink" href="#respuesta" title="Link to this heading">#</a></h3>
 <p><strong>d) <span class="math notranslate nohighlight">\(\lim a_n = \dfrac{9}{2}\)</span></strong></p>
 </section>
+</section>
+<section id="graficos">
+<h2>Gráficos<a class="headerlink" href="#graficos" title="Link to this heading">#</a></h2>
 <section id="grafico-limite-sucesion">
 <h3>grafico límite sucesión<a class="headerlink" href="#grafico-limite-sucesion" title="Link to this heading">#</a></h3>
 <p>Puedes ver la figura interactiva aquí:
 <a class="reference download internal" download="" href="_downloads/0a20433c1b83d467c7342a45fa625eaf/sucesion_interactiva3.html"><span class="xref download myst">Ver gráfico interactivo</span></a></p>
 <p><a class="reference external" href="https://mybinder.org/v2/gh/sebaspatric/guia24/HEAD?labpath=Calculo2024ej1.ipynb">🔗 Abrir libro de trabajo ejercicio funcion continua</a></p>
+</section>
+<section id="grafico-sucesion-interactivo">
+<h3>grafico sucesión interactivo<a class="headerlink" href="#grafico-sucesion-interactivo" title="Link to this heading">#</a></h3>
+<iframe src="sucesion_interactiva3.html" width="800" height="600"></iframe>
+<hr class="docutils" />
+<div class="math notranslate nohighlight">
+\[
+a_n = 4 + \frac{n+1}{2n}
+\]</div>
+</section>
+<hr class="docutils" />
+<section id="interpretacion-de-la-grafica">
+<h3>Interpretación de la gráfica<a class="headerlink" href="#interpretacion-de-la-grafica" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p><strong>Definición de la sucesión</strong>
+La sucesión está dada por</p>
+<div class="math notranslate nohighlight">
+\[
+   a_n = 4 + \frac{n+1}{2n},
+   \]</div>
+<p>donde <span class="math notranslate nohighlight">\(n\)</span> toma valores enteros positivos, por ejemplo desde <span class="math notranslate nohighlight">\(n=1\)</span> hasta <span class="math notranslate nohighlight">\(n=100\)</span>.</p>
+</li>
+<li><p><strong>Comportamiento inicial</strong>
+Para valores pequeños de <span class="math notranslate nohighlight">\(n\)</span>, el término <span class="math notranslate nohighlight">\(\tfrac{n+1}{2n}\)</span> es mayor que <span class="math notranslate nohighlight">\(0.5\)</span>.
+Por ejemplo, para <span class="math notranslate nohighlight">\(n=1\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+   \frac{n+1}{2n} = \frac{2}{2} = 1,
+   \]</div>
+<p>de modo que <span class="math notranslate nohighlight">\(a_1 = 5\)</span>. Así, la sucesión comienza en un valor cercano a 5.</p>
+</li>
+<li><p><strong>Convergencia al límite</strong>
+A medida que <span class="math notranslate nohighlight">\(n\)</span> crece, <span class="math notranslate nohighlight">\(\tfrac{n+1}{2n}\)</span> se aproxima a <span class="math notranslate nohighlight">\(\tfrac{1}{2}\)</span>.
+Por lo tanto,</p>
+<div class="math notranslate nohighlight">
+\[
+   \lim_{n\to\infty} a_n = 4 + \tfrac{1}{2} = \tfrac{9}{2} = 4.5.
+   \]</div>
+<p>En la gráfica esto se aprecia como puntos que se acercan a la recta horizontal <span class="math notranslate nohighlight">\(y=4.5\)</span> (línea punteada roja).</p>
+</li>
+<li><p><strong>Tasa de convergencia</strong>
+La sucesión decrece suavemente hacia el límite desde arriba, y la diferencia <span class="math notranslate nohighlight">\(|a_n - 4.5|\)</span> se reduce conforme <span class="math notranslate nohighlight">\(n\)</span> aumenta.</p></li>
+<li><p><strong>Conclusión</strong>
+La representación gráfica confirma que</p>
+<div class="math notranslate nohighlight">
+\[
+   \lim_{n\to\infty} a_n = \tfrac{9}{2},
+   \]</div>
+<p>y que la sucesión converge de manera monótonamente decreciente hacia ese valor.</p>
+</li>
+</ol>
+</section>
+</section>
+<section id="codigos">
+<h2>Codigos<a class="headerlink" href="#codigos" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#%pip install matplotlib </span>
@@ -485,10 +547,6 @@ a_n = 4 + \frac{n+1}{2n}.
 </div>
 </div>
 </div>
-</section>
-<section id="grafico-sucesion-interactivo">
-<h3>grafico sucesión interactivo<a class="headerlink" href="#grafico-sucesion-interactivo" title="Link to this heading">#</a></h3>
-<iframe src="sucesion_interactiva3.html" width="800" height="600"></iframe>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#código para gráfica interactiva de la sucesión a_n</span>
@@ -584,54 +642,6 @@ a_n = 4 + \frac{n+1}{2n}.
 </div>
 </div>
 </div>
-<hr class="docutils" />
-<div class="math notranslate nohighlight">
-\[
-a_n = 4 + \frac{n+1}{2n}
-\]</div>
-</section>
-<hr class="docutils" />
-<section id="interpretacion-de-la-grafica">
-<h3>Interpretación de la gráfica<a class="headerlink" href="#interpretacion-de-la-grafica" title="Link to this heading">#</a></h3>
-<ol class="arabic">
-<li><p><strong>Definición de la sucesión</strong>
-La sucesión está dada por</p>
-<div class="math notranslate nohighlight">
-\[
-   a_n = 4 + \frac{n+1}{2n},
-   \]</div>
-<p>donde <span class="math notranslate nohighlight">\(n\)</span> toma valores enteros positivos, por ejemplo desde <span class="math notranslate nohighlight">\(n=1\)</span> hasta <span class="math notranslate nohighlight">\(n=100\)</span>.</p>
-</li>
-<li><p><strong>Comportamiento inicial</strong>
-Para valores pequeños de <span class="math notranslate nohighlight">\(n\)</span>, el término <span class="math notranslate nohighlight">\(\tfrac{n+1}{2n}\)</span> es mayor que <span class="math notranslate nohighlight">\(0.5\)</span>.
-Por ejemplo, para <span class="math notranslate nohighlight">\(n=1\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[
-   \frac{n+1}{2n} = \frac{2}{2} = 1,
-   \]</div>
-<p>de modo que <span class="math notranslate nohighlight">\(a_1 = 5\)</span>. Así, la sucesión comienza en un valor cercano a 5.</p>
-</li>
-<li><p><strong>Convergencia al límite</strong>
-A medida que <span class="math notranslate nohighlight">\(n\)</span> crece, <span class="math notranslate nohighlight">\(\tfrac{n+1}{2n}\)</span> se aproxima a <span class="math notranslate nohighlight">\(\tfrac{1}{2}\)</span>.
-Por lo tanto,</p>
-<div class="math notranslate nohighlight">
-\[
-   \lim_{n\to\infty} a_n = 4 + \tfrac{1}{2} = \tfrac{9}{2} = 4.5.
-   \]</div>
-<p>En la gráfica esto se aprecia como puntos que se acercan a la recta horizontal <span class="math notranslate nohighlight">\(y=4.5\)</span> (línea punteada roja).</p>
-</li>
-<li><p><strong>Tasa de convergencia</strong>
-La sucesión decrece suavemente hacia el límite desde arriba, y la diferencia <span class="math notranslate nohighlight">\(|a_n - 4.5|\)</span> se reduce conforme <span class="math notranslate nohighlight">\(n\)</span> aumenta.</p></li>
-<li><p><strong>Conclusión</strong>
-La representación gráfica confirma que</p>
-<div class="math notranslate nohighlight">
-\[
-   \lim_{n\to\infty} a_n = \tfrac{9}{2},
-   \]</div>
-<p>y que la sucesión converge de manera monótonamente decreciente hacia ese valor.</p>
-</li>
-</ol>
-</section>
 </section>
 </section>
 
@@ -699,15 +709,19 @@ La representación gráfica confirma que</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pregunta1-limite-sucesion">Pregunta1: limite sucesión</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#desarrollo">Desarrollo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pregunta1-limite-sucesion">Pregunta1: limite sucesión</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#desarrollo">Desarrollo</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-del-limite"><strong>Cálculo del límite</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#respuesta"><strong>Respuesta:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos">Gráficos</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico-limite-sucesion">grafico límite sucesión</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico-sucesion-interactivo">grafico sucesión interactivo</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-la-grafica">Interpretación de la gráfica</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codigos">Codigos</a></li>
 </ul>
   </nav></div>
 
