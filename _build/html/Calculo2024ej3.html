@@ -241,7 +241,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/sebaspatric/guia24" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -258,7 +258,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FCalculo2024ej3.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/sebaspatric/guia24/issues/new?title=Issue%20on%20page%20%2FCalculo2024ej3.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -404,7 +404,6 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grafica-funcion-continua">grafica funcion continua</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grafica-estatica">gráfica estática</a></li>
 </ul>
 </li>
 </ul>
@@ -553,11 +552,16 @@ f(2) = a(2)^2 - b(2) + 3 = 4a - 2b + 3
 </section>
 <section id="grafica-funcion-continua">
 <h3>grafica funcion continua<a class="headerlink" href="#grafica-funcion-continua" title="Link to this heading">#</a></h3>
-<p><a class="reference internal" href="#html/plotly_funcion_continua.html"><span class="xref myst">Ver gráfico interactivo</span></a></p>
+<p><a class="reference download internal" download="" href="_downloads/1953d9cf13fdb48e514c07847d487dba/plotly_funcion_continua.html"><span class="xref download myst">Ver gráfico interactivo</span></a></p>
+<p><a class="reference external" href="https://mybinder.org/v2/gh/sebaspatric/guia24/HEAD?labpath=Calculo2024ej3.ipynb">🔗 Abrir libro de trabajo ejercicio funcion continua</a></p>
+<iframe src="plotly_funcion_continua.html" width="800" height="600"></iframe>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Código para graficar la función por partes continua en ℝ</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">IFrame</span>
+
 
 <span class="c1"># Funciones por tramos</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">f_left</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -639,6 +643,7 @@ f(2) = a(2)^2 - b(2) + 3 = 4a - 2b + 3
 <span class="p">)</span>
 
 <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">write_html</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;_build</span><span class="se">\\</span><span class="s2">html</span><span class="se">\\</span><span class="s2">plotly_funcion_continua.html&quot;</span><span class="p">,</span> <span class="n">include_plotlyjs</span><span class="o">=</span><span class="s2">&quot;cdn&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -647,91 +652,23 @@ f(2) = a(2)^2 - b(2) + 3 = 4a - 2b + 3
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">IFrame</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#from IPython.display import IFrame</span>
 <span class="c1">#guardar grafico interactivo en html</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">write_html</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;_build</span><span class="se">\\</span><span class="s2">html</span><span class="se">\\</span><span class="s2">plotly_funcion_continua.html&quot;</span><span class="p">,</span> <span class="n">include_plotlyjs</span><span class="o">=</span><span class="s2">&quot;cdn&quot;</span><span class="p">)</span>
+<span class="c1">#fig.write_html(r&quot;_build\\html\\plotly_funcion_continua.html&quot;, include_plotlyjs=&quot;cdn&quot;)</span>
 
 <span class="c1">#insertar grafico interactivo en jupyter notebook</span>
-<span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;plotly_funcion_continua.html&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<span class="c1">#IFrame(&quot;plotly_funcion_continua.html&quot;, width=700, height=500)</span>
 <span class="c1">#visualizar el iframe</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-        <iframe
-            width="700"
-            height="500"
-            src="plotly_funcion_continua.html"
-            frameborder="0"
-            allowfullscreen
-            
-        ></iframe>
-        </div></div>
 </div>
-</section>
-<section id="grafica-estatica">
-<h3>gráfica estática<a class="headerlink" href="#grafica-estatica" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-
-<span class="c1"># Valores de a y b encontrados</span>
-<span class="n">a</span> <span class="o">=</span> <span class="mf">0.5</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mf">0.5</span>
-
-<span class="c1"># Definimos las tres partes de la función</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">f_left</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">f_middle</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">b</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">f_right</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">-</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-
-<span class="c1"># Crear rangos de x para cada tramo</span>
-<span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.99</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
-<span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
-<span class="n">x3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">3.01</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
-
-<span class="c1"># Calcular y para cada tramo</span>
-<span class="n">y1</span> <span class="o">=</span> <span class="n">f_left</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>
-<span class="n">y2</span> <span class="o">=</span> <span class="n">f_middle</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
-<span class="n">y3</span> <span class="o">=</span> <span class="n">f_right</span><span class="p">(</span><span class="n">x3</span><span class="p">)</span>
-
-<span class="c1"># Crear la figura</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
-
-<span class="c1"># Graficar cada tramo</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;x &lt; 2&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;2 ≤ x ≤ 3&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x3</span><span class="p">,</span> <span class="n">y3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;x &gt; 3&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
-
-<span class="c1"># Puntos exactos en x = 2 y x = 3</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">f_middle</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="s1">&#39;ko&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;f(2)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">f_middle</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="s1">&#39;ko&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;f(3)&#39;</span><span class="p">)</span>
-
-<span class="c1"># Líneas verticales para guiar visualmente</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
-
-<span class="c1"># Estética del gráfico</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Función por partes continua en ℝ&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;f(x)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
-
-<span class="c1"># Mostrar la gráfica</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># instalar mpld3</span>
+<span class="c1">#!pip install mpld3</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/92d71327368d346c5a23b9b3716d9b3945b98578fca6d012061c9a2f07a5a112.png" src="_images/92d71327368d346c5a23b9b3716d9b3945b98578fca6d012061c9a2f07a5a112.png" />
 </div>
 </div>
 </section>
@@ -824,7 +761,6 @@ f(2) = a(2)^2 - b(2) + 3 = 4a - 2b + 3
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grafica-funcion-continua">grafica funcion continua</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grafica-estatica">gráfica estática</a></li>
 </ul>
 </li>
 </ul>
