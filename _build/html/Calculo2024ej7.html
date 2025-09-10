@@ -1,0 +1,1093 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Calculo2024 &#8212; Guia CALCULO 2024</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Calculo2024ej7';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Calculo2024" href="Calculo2024ej8.html" />
+    <link rel="prev" title="Calculo2024" href="Calculo2024ej6.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/integrales.jpeg" class="logo__image only-light" alt="Guia CALCULO 2024 - Home"/>
+    <script>document.write(`<img src="_static/integrales.jpeg" class="logo__image only-dark" alt="Guia CALCULO 2024 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Guía de Ejercicios de Cálculo
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Calculo2024ej1.html">Ejercicio 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Calculo2024ej2.html">Ejercicio 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Calculo2024ej3.html">Ejercicio 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Calculo2024ej4.html">Ejercicio 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Calculo2024ej5.html">Ejercicio 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Calculo2024ej6.html">Ejercicio 6</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Ejercicio 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Calculo2024ej8.html">Ejercicio 8</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/sebaspatric/guia24" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/sebaspatric/guia24/issues/new?title=Issue%20on%20page%20%2FCalculo2024ej7.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Calculo2024ej7.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Calculo2024</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pregunta7">Pregunta7</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#desarrollo">Desarrollo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-demuestre-que-la-sucesion-a-n-es-creciente-y-argumente-por-que-no-es-convergente">a) Demuestre que la sucesión <span class="math notranslate nohighlight">\(\{a_n\}\)</span> es creciente y argumente por qué no es convergente.</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-1-casos-base">Paso 1: Casos base</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-2-hipotesis-inductiva">Paso 2: Hipótesis inductiva</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-3-paso-inductivo">Paso 3: Paso inductivo</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion"><strong>Conclusión</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico-sucesion-a-n-fibonacci">Gráfico Sucesión <span class="math notranslate nohighlight">\(a_n\)</span> fibonacci</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-calculo-de-los-primeros-7-terminos-de-la-sucesion-b-n-frac-a-n-1-a-n">b) Cálculo de los primeros 7 términos de la sucesión <span class="math notranslate nohighlight">\(b_n = \frac{a_{n+1}}{a_n}\)</span></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-1-calcular-los-terminos-a-3-a-a-8">Paso 1: Calcular los términos <span class="math notranslate nohighlight">\(a_3\)</span> a <span class="math notranslate nohighlight">\(a_8\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-2-calcular-los-terminos-b-n">Paso 2: Calcular los términos <span class="math notranslate nohighlight">\(b_n\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-convergencia-de-b-n">c) Convergencia de <span class="math notranslate nohighlight">\(b_n\)</span></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-1-recordemos-la-relacion-de-recurrencia-para-b-n">Paso 1: Recordemos la relación de recurrencia para <span class="math notranslate nohighlight">\(b_n\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-2-suposicion-de-convergencia-y-uso-de-continuidad">Paso 2: Suposición de convergencia y uso de continuidad</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-demostracion">d) Demostración</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-1-obtener-una-relacion-para-b-n">Paso 1: Obtener una relación para <span class="math notranslate nohighlight">\(b_n\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-2-suponemos-que-el-limite-existe">Paso 2: Suponemos que el límite existe</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-3-resolver-la-ecuacion-para-l">Paso 3: Resolver la ecuación para <span class="math notranslate nohighlight">\(L\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-4-solucion-de-la-ecuacion-cuadratica">Paso 4: Solución de la ecuación cuadrática</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-5-elegir-la-solucion-correcta">Paso 5: Elegir la solución correcta</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>Conclusión:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico-limite-sucesion">gráfico limite sucesion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codigos">Códigos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sucesion-fibonacci">sucesión fibonacci</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numero-aureo">numero aureo</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="calculo2024">
+<h1>Calculo2024<a class="headerlink" href="#calculo2024" title="Link to this heading">#</a></h1>
+<section id="pregunta7">
+<h2>Pregunta7<a class="headerlink" href="#pregunta7" title="Link to this heading">#</a></h2>
+<p><strong>7.</strong> Considere la sucesión <span class="math notranslate nohighlight">\(\{a_n\}\)</span> definida por:</p>
+<div class="math notranslate nohighlight">
+\[
+a_1 = 1, \quad a_2 = 1, \quad a_{n+2} = a_{n+1} + a_n, \quad n \in \mathbb{N}.
+\]</div>
+<p>a) Demuestre que la sucesión <span class="math notranslate nohighlight">\(\{a_n\}\)</span> es creciente y argumente por qué no es convergente.</p>
+<p>b) Considere la sucesión <span class="math notranslate nohighlight">\(\{b_n\}\)</span> definida por:</p>
+<div class="math notranslate nohighlight">
+\[
+b_n = \frac{a_{n+1}}{a_n}, \quad n \in \mathbb{N}.
+\]</div>
+<p>Calcule sus primeros 7 términos.</p>
+<p>c) Argumente sobre la convergencia de la sucesión <span class="math notranslate nohighlight">\(\{b_n\}\)</span>.</p>
+<p>d) Demuestre que</p>
+<div class="math notranslate nohighlight">
+\[
+\varphi = \lim_{n \to \infty} b_n,
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(\varphi = \frac{1 + \sqrt{5}}{2}\)</span> (número áureo).</p>
+</section>
+<hr class="docutils" />
+<section id="desarrollo">
+<h2>Desarrollo<a class="headerlink" href="#desarrollo" title="Link to this heading">#</a></h2>
+<section id="a-demuestre-que-la-sucesion-a-n-es-creciente-y-argumente-por-que-no-es-convergente">
+<h3>a) Demuestre que la sucesión <span class="math notranslate nohighlight">\(\{a_n\}\)</span> es creciente y argumente por qué no es convergente.<a class="headerlink" href="#a-demuestre-que-la-sucesion-a-n-es-creciente-y-argumente-por-que-no-es-convergente" title="Link to this heading">#</a></h3>
+<p>demostración formal <strong>análoga</strong> a la de <span class="math notranslate nohighlight">\(f_{n+2} \geq n + (n-1) = 2n - 1\)</span>, pero aplicada a la sucesión <span class="math notranslate nohighlight">\((a_n)\)</span>:</p>
+<p>Demostración inductiva de que la sucesión <span class="math notranslate nohighlight">\((a_n)\)</span> satisface</p>
+<div class="math notranslate nohighlight">
+\[
+a_n \geq n - 1 \quad \text{para todo } n \geq 2
+\]</div>
+<hr class="docutils" />
+<section id="paso-1-casos-base">
+<h4>Paso 1: Casos base<a class="headerlink" href="#paso-1-casos-base" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Para <span class="math notranslate nohighlight">\(n = 2\)</span>:
+$<span class="math notranslate nohighlight">\(
+a_2 = 1, \quad n - 1 = 1 \quad \Rightarrow \quad a_2 = 1 \geq 1
+\)</span>$</p></li>
+<li><p>Para <span class="math notranslate nohighlight">\(n = 3\)</span>:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+a_3 = a_2 + a_1 = 1 + 1 = 2, \quad n - 1 = 2 \quad \Rightarrow \quad a_3 = 2 \geq 2
+\]</div>
+<p>Ambos casos base se cumplen.</p>
+</section>
+<hr class="docutils" />
+<section id="paso-2-hipotesis-inductiva">
+<h4>Paso 2: Hipótesis inductiva<a class="headerlink" href="#paso-2-hipotesis-inductiva" title="Link to this heading">#</a></h4>
+<p>Supongamos que para un <span class="math notranslate nohighlight">\(n \geq 2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+a_n \geq n - 1 \quad \text{y} \quad a_{n+1} \geq n
+\]</div>
+</section>
+<hr class="docutils" />
+<section id="paso-3-paso-inductivo">
+<h4>Paso 3: Paso inductivo<a class="headerlink" href="#paso-3-paso-inductivo" title="Link to this heading">#</a></h4>
+<p>Queremos probar que:</p>
+<div class="math notranslate nohighlight">
+\[
+a_{n+2} \geq n + 1
+\]</div>
+<p>Por definición:</p>
+<div class="math notranslate nohighlight">
+\[
+a_{n+2} = a_{n+1} + a_n
+\]</div>
+<p>Aplicando la hipótesis inductiva:</p>
+<div class="math notranslate nohighlight">
+\[
+a_{n+2} \geq n + (n - 1) = 2n - 1
+\]</div>
+<p>Ahora comparamos:</p>
+<div class="math notranslate nohighlight">
+\[
+2n - 1 \geq n + 1 \quad \iff \quad n - 2 \geq 0 \quad \iff \quad n \geq 2
+\]</div>
+<p>Esto es cierto para todo <span class="math notranslate nohighlight">\(n \geq 2\)</span>.</p>
+<p>Por lo tanto:</p>
+<div class="math notranslate nohighlight">
+\[
+a_{n+2} \geq n + 1
+\]</div>
+</section>
+<hr class="docutils" />
+<section id="conclusion">
+<h4><strong>Conclusión</strong><a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h4>
+<p>Por inducción matemática, para todo <span class="math notranslate nohighlight">\(n \geq 2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+a_n \geq n - 1
+\]</div>
+<p>Esto implica que <span class="math notranslate nohighlight">\((a_n)\)</span> crece al menos tan rápido como <span class="math notranslate nohighlight">\(n - 1\)</span>, por lo que:</p>
+<ul class="simple">
+<li><p>La sucesión es <strong>creciente</strong> (a partir de <span class="math notranslate nohighlight">\(n=2\)</span>)</p></li>
+<li><p>No está acotada superiormente</p></li>
+<li><p>Por tanto, la sucesión <strong>no es convergente</strong> y diverge a infinito.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="grafico-sucesion-a-n-fibonacci">
+<h3>Gráfico Sucesión <span class="math notranslate nohighlight">\(a_n\)</span> fibonacci<a class="headerlink" href="#grafico-sucesion-a-n-fibonacci" title="Link to this heading">#</a></h3>
+<p><a class="reference internal" href="#7sucesion_fibonacci.html"><span class="xref myst">Ver gráfico interactivo</span></a></p>
+<p><a class="reference external" href="https://mybinder.org/v2/gh/sebaspatric/guia24/HEAD?labpath=Calculo2024ej7.ipynb">🔗 Abrir libro de trabajo fibonacci</a></p>
+<iframe src="7sucesion_fibonacci.html" width="800" height="600"></iframe></section>
+<hr class="docutils" />
+<section id="b-calculo-de-los-primeros-7-terminos-de-la-sucesion-b-n-frac-a-n-1-a-n">
+<h3>b) Cálculo de los primeros 7 términos de la sucesión <span class="math notranslate nohighlight">\(b_n = \frac{a_{n+1}}{a_n}\)</span><a class="headerlink" href="#b-calculo-de-los-primeros-7-terminos-de-la-sucesion-b-n-frac-a-n-1-a-n" title="Link to this heading">#</a></h3>
+<hr class="docutils" />
+<p>Dada la sucesión <span class="math notranslate nohighlight">\((a_n)\)</span> definida por:</p>
+<div class="math notranslate nohighlight">
+\[
+a_1 = 1, \quad a_2 = 1, \quad a_{n+2} = a_{n+1} + a_n,
+\]</div>
+<p>definimos la sucesión <span class="math notranslate nohighlight">\((b_n)\)</span> como:</p>
+<div class="math notranslate nohighlight">
+\[
+b_n = \frac{a_{n+1}}{a_n}, \quad n \in \mathbb{N}.
+\]</div>
+<p>Queremos calcular <span class="math notranslate nohighlight">\(b_1, b_2, \ldots, b_7\)</span>.</p>
+<hr class="docutils" />
+<section id="paso-1-calcular-los-terminos-a-3-a-a-8">
+<h4>Paso 1: Calcular los términos <span class="math notranslate nohighlight">\(a_3\)</span> a <span class="math notranslate nohighlight">\(a_8\)</span><a class="headerlink" href="#paso-1-calcular-los-terminos-a-3-a-a-8" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+a_3 &amp;= a_2 + a_1 = 1 + 1 = 2, \\
+a_4 &amp;= a_3 + a_2 = 2 + 1 = 3, \\
+a_5 &amp;= a_4 + a_3 = 3 + 2 = 5, \\
+a_6 &amp;= a_5 + a_4 = 5 + 3 = 8, \\
+a_7 &amp;= a_6 + a_5 = 8 + 5 = 13, \\
+a_8 &amp;= a_7 + a_6 = 13 + 8 = 21.
+\end{aligned}
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="paso-2-calcular-los-terminos-b-n">
+<h4>Paso 2: Calcular los términos <span class="math notranslate nohighlight">\(b_n\)</span><a class="headerlink" href="#paso-2-calcular-los-terminos-b-n" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+b_1 &amp;= \frac{a_2}{a_1} = \frac{1}{1} = 1, \\
+b_2 &amp;= \frac{a_3}{a_2} = \frac{2}{1} = 2, \\
+b_3 &amp;= \frac{a_4}{a_3} = \frac{3}{2} = 1.5, \\
+b_4 &amp;= \frac{a_5}{a_4} = \frac{5}{3} \approx 1.6667, \\
+b_5 &amp;= \frac{a_6}{a_5} = \frac{8}{5} = 1.6, \\
+b_6 &amp;= \frac{a_7}{a_6} = \frac{13}{8} = 1.625, \\
+b_7 &amp;= \frac{a_8}{a_7} = \frac{21}{13} \approx 1.6154.
+\end{aligned}
+\end{split}\]</div>
+</section>
+</section>
+<section id="c-convergencia-de-b-n">
+<h3>c) Convergencia de <span class="math notranslate nohighlight">\(b_n\)</span><a class="headerlink" href="#c-convergencia-de-b-n" title="Link to this heading">#</a></h3>
+<p>Interpretación</p>
+<p>La sucesión <span class="math notranslate nohighlight">\((b_n)\)</span> representa la razón entre términos consecutivos de Fibonacci. Estos valores parecen acercarse a un número fijo (aproximadamente 1.618), que está relacionado con el número áureo <span class="math notranslate nohighlight">\(\varphi = \frac{1 + \sqrt{5}}{2} \approx 1.618\)</span>.</p>
+<hr class="docutils" />
+<p>límite para la sucesión</p>
+<div class="math notranslate nohighlight">
+\[
+b_n = \frac{a_{n+1}}{a_n}
+\]</div>
+<p>donde <span class="math notranslate nohighlight">\(a_n\)</span> es la sucesión de Fibonacci.</p>
+<section id="paso-1-recordemos-la-relacion-de-recurrencia-para-b-n">
+<h4>Paso 1: Recordemos la relación de recurrencia para <span class="math notranslate nohighlight">\(b_n\)</span><a class="headerlink" href="#paso-1-recordemos-la-relacion-de-recurrencia-para-b-n" title="Link to this heading">#</a></h4>
+<p>La sucesión <span class="math notranslate nohighlight">\(b_n\)</span> satisface:</p>
+<div class="math notranslate nohighlight">
+\[
+b_{n+1} = 1 + \frac{1}{b_n}.
+\]</div>
+<p>Esto lo obtuvimos de la definición de <span class="math notranslate nohighlight">\(a_n\)</span>:</p>
+<hr class="docutils" />
+<p>De la definición de <span class="math notranslate nohighlight">\(a_n\)</span>, tenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+b_{n+1} \;=\; \frac{a_{n+2}}{a_{n+1}}.
+\]</div>
+<p>Ahora sustituimos la recurrencia <span class="math notranslate nohighlight">\(a_{n+2} = a_{n+1} + a_n\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+b_{n+1} = \frac{a_{n+1} + a_n}{a_{n+1}}.
+\]</div>
+<p>Separamos en dos términos:</p>
+<div class="math notranslate nohighlight">
+\[
+b_{n+1} = \frac{a_{n+1}}{a_{n+1}} + \frac{a_n}{a_{n+1}}.
+\]</div>
+<p>Simplificamos el primer cociente:</p>
+<div class="math notranslate nohighlight">
+\[
+b_{n+1} = 1 + \frac{a_n}{a_{n+1}}.
+\]</div>
+<p>Reconocemos que <span class="math notranslate nohighlight">\(\tfrac{a_n}{a_{n+1}} = \tfrac{1}{b_n}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+b_{n+1} = 1 + \frac{1}{b_n}.
+\]</div>
+</section>
+<hr class="docutils" />
+<section id="paso-2-suposicion-de-convergencia-y-uso-de-continuidad">
+<h4>Paso 2: Suposición de convergencia y uso de continuidad<a class="headerlink" href="#paso-2-suposicion-de-convergencia-y-uso-de-continuidad" title="Link to this heading">#</a></h4>
+<p>Asumamos que la sucesión <span class="math notranslate nohighlight">\(b_n\)</span> converge a un límite <span class="math notranslate nohighlight">\(L\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{n \to \infty} b_n = L.
+\]</div>
+<p>Por la continuidad de la función <span class="math notranslate nohighlight">\(g(x) = 1 + \frac{1}{x}\)</span> (válida para <span class="math notranslate nohighlight">\(x \neq 0\)</span>), podemos aplicar el límite en ambos lados de la recurrencia:</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{n \to \infty} b_{n+1} = \lim_{n \to \infty} \left(1 + \frac{1}{b_n}\right).
+\]</div>
+<p>Como <span class="math notranslate nohighlight">\(b_{n+1}\)</span> también tiende a <span class="math notranslate nohighlight">\(L\)</span>, entonces:</p>
+<div class="math notranslate nohighlight">
+\[
+L = 1 + \frac{1}{L}.
+\]</div>
+</section>
+</section>
+<section id="d-demostracion">
+<h3>d) Demostración<a class="headerlink" href="#d-demostracion" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+\varphi = \lim_{n \to \infty} b_n,
+\]</div>
+<p>donde</p>
+<div class="math notranslate nohighlight">
+\[
+b_n = \frac{a_{n+1}}{a_n}
+\]</div>
+<p>y <span class="math notranslate nohighlight">\(\varphi = \frac{1 + \sqrt{5}}{2}\)</span> es el número áureo.</p>
+<hr class="docutils" />
+<p>La sucesión <span class="math notranslate nohighlight">\(\{a_n\}\)</span> está definida por la recurrencia de Fibonacci:</p>
+<div class="math notranslate nohighlight">
+\[
+a_{n+2} = a_{n+1} + a_n, \quad n \geq 1,
+\]</div>
+<hr class="docutils" />
+<p>con condiciones iniciales <span class="math notranslate nohighlight">\(a_1 = 1, a_2 = 1\)</span>.</p>
+<p>Definamos</p>
+<div class="math notranslate nohighlight">
+\[
+b_n = \frac{a_{n+1}}{a_n}.
+\]</div>
+<p>Queremos demostrar que <span class="math notranslate nohighlight">\(b_n \to \varphi\)</span>.</p>
+<hr class="docutils" />
+<section id="paso-1-obtener-una-relacion-para-b-n">
+<h4>Paso 1: Obtener una relación para <span class="math notranslate nohighlight">\(b_n\)</span><a class="headerlink" href="#paso-1-obtener-una-relacion-para-b-n" title="Link to this heading">#</a></h4>
+<p>Dividamos la recurrencia por <span class="math notranslate nohighlight">\(a_{n+1}\)</span> (asumiendo <span class="math notranslate nohighlight">\(a_{n+1} \neq 0\)</span>):
+$<span class="math notranslate nohighlight">\(
+\frac{a_{n+2}}{a_{n+1}} = \frac{a_{n+1} + a_n}{a_{n+1}}
+\)</span>$</p>
+<p>Así, la sucesión <span class="math notranslate nohighlight">\(b_n\)</span> satisface la relación:
+$<span class="math notranslate nohighlight">\(
+b_{n+1} = 1 + \frac{1}{b_n}.
+\)</span>$</p>
+</section>
+<hr class="docutils" />
+<section id="paso-2-suponemos-que-el-limite-existe">
+<h4>Paso 2: Suponemos que el límite existe<a class="headerlink" href="#paso-2-suponemos-que-el-limite-existe" title="Link to this heading">#</a></h4>
+<p>Supongamos que la sucesión <span class="math notranslate nohighlight">\(\{b_n\}\)</span> converge a un límite <span class="math notranslate nohighlight">\(L\)</span>. Entonces, al tomar límite en ambos lados de la relación:</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{n \to \infty} b_{n+1} = \lim_{n \to \infty} \left(1 + \frac{1}{b_n}\right) \implies L = 1 + \frac{1}{L},
+\]</div>
+<p>donde usamos la continuidad de las funciones suma y división.</p>
+</section>
+<hr class="docutils" />
+<section id="paso-3-resolver-la-ecuacion-para-l">
+<h4>Paso 3: Resolver la ecuación para <span class="math notranslate nohighlight">\(L\)</span><a class="headerlink" href="#paso-3-resolver-la-ecuacion-para-l" title="Link to this heading">#</a></h4>
+<p>Multiplicamos ambos lados por <span class="math notranslate nohighlight">\(L\)</span> para eliminar la fracción:</p>
+<div class="math notranslate nohighlight">
+\[
+L^2 = L + 1.
+\]</div>
+<p>Esto da la ecuación cuadrática:</p>
+<div class="math notranslate nohighlight">
+\[
+L^2 - L - 1 = 0.
+\]</div>
+</section>
+<hr class="docutils" />
+<section id="paso-4-solucion-de-la-ecuacion-cuadratica">
+<h4>Paso 4: Solución de la ecuación cuadrática<a class="headerlink" href="#paso-4-solucion-de-la-ecuacion-cuadratica" title="Link to this heading">#</a></h4>
+<p>Usando la fórmula general,</p>
+<div class="math notranslate nohighlight">
+\[
+L = \frac{1 \pm \sqrt{1 + 4}}{2} = \frac{1 \pm \sqrt{5}}{2}.
+\]</div>
+<p>Así, las soluciones son:</p>
+<div class="math notranslate nohighlight">
+\[
+L_1 = \frac{1 + \sqrt{5}}{2} = \varphi \approx 1.618,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+L_2 = \frac{1 - \sqrt{5}}{2} \approx -0.618.
+\]</div>
+</section>
+<hr class="docutils" />
+<section id="paso-5-elegir-la-solucion-correcta">
+<h4>Paso 5: Elegir la solución correcta<a class="headerlink" href="#paso-5-elegir-la-solucion-correcta" title="Link to this heading">#</a></h4>
+<p>Como todos los términos de Fibonacci <span class="math notranslate nohighlight">\(a_n\)</span> son positivos para <span class="math notranslate nohighlight">\(n \geq 1\)</span>, entonces <span class="math notranslate nohighlight">\(b_n = \frac{a_{n+1}}{a_n} &gt; 0\)</span> para todo <span class="math notranslate nohighlight">\(n\)</span>.</p>
+<p>Por lo tanto, el límite debe ser positivo, descartando <span class="math notranslate nohighlight">\(L_2\)</span>.</p>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h4><strong>Conclusión:</strong><a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+\lim_{n \to \infty} b_n = \varphi = \frac{1 + \sqrt{5}}{2}.
+}
+\]</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="grafico-limite-sucesion">
+<h3>gráfico limite sucesion<a class="headerlink" href="#grafico-limite-sucesion" title="Link to this heading">#</a></h3>
+<iframe src="7numeroaureo.html" width="800" height="600"></iframe></section>
+</section>
+<section id="codigos">
+<h2>Códigos<a class="headerlink" href="#codigos" title="Link to this heading">#</a></h2>
+<section id="sucesion-fibonacci">
+<h3>sucesión fibonacci<a class="headerlink" href="#sucesion-fibonacci" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### sucecion fibonacci</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
+
+<span class="c1"># Sucesión Fibonacci</span>
+<span class="n">N_total_max</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">fib</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">N_total_max</span><span class="p">):</span>
+    <span class="n">fib</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fib</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">fib</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">fib</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">fib</span><span class="p">)</span>
+<span class="n">n_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N_total_max</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Crear figura con 3 traces</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+
+<span class="n">trace_an</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">n_vals</span><span class="p">[:</span><span class="mi">20</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">fib</span><span class="p">[:</span><span class="mi">20</span><span class="p">],</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+markers&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;a_n&#39;</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">))</span>
+<span class="n">trace_an1</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">n_vals</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">20</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">fib</span><span class="p">[:</span><span class="mi">19</span><span class="p">],</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+markers&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;a_{n-1}&#39;</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="n">dash</span><span class="o">=</span><span class="s1">&#39;dash&#39;</span><span class="p">))</span>
+<span class="n">trace_an2</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">n_vals</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">20</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">fib</span><span class="p">[:</span><span class="mi">18</span><span class="p">],</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+markers&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;a_{n-2}&#39;</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">dash</span><span class="o">=</span><span class="s1">&#39;dot&#39;</span><span class="p">))</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">add_traces</span><span class="p">([</span><span class="n">trace_an</span><span class="p">,</span> <span class="n">trace_an1</span><span class="p">,</span> <span class="n">trace_an2</span><span class="p">])</span>
+
+<span class="c1"># Crear slider</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">N_max</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">N_total_max</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">x_an</span> <span class="o">=</span> <span class="n">n_vals</span><span class="p">[:</span><span class="n">N_max</span><span class="p">]</span>
+    <span class="n">y_an</span> <span class="o">=</span> <span class="n">fib</span><span class="p">[:</span><span class="n">N_max</span><span class="p">]</span>
+
+    <span class="n">x_an1</span> <span class="o">=</span> <span class="n">n_vals</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="n">N_max</span><span class="p">]</span> <span class="k">if</span> <span class="n">N_max</span><span class="o">&gt;</span><span class="mi">1</span> <span class="k">else</span> <span class="p">[]</span>
+    <span class="n">y_an1</span> <span class="o">=</span> <span class="n">fib</span><span class="p">[:</span><span class="n">N_max</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="n">N_max</span><span class="o">&gt;</span><span class="mi">1</span> <span class="k">else</span> <span class="p">[]</span>
+
+    <span class="n">x_an2</span> <span class="o">=</span> <span class="n">n_vals</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="n">N_max</span><span class="p">]</span> <span class="k">if</span> <span class="n">N_max</span><span class="o">&gt;</span><span class="mi">2</span> <span class="k">else</span> <span class="p">[]</span>
+    <span class="n">y_an2</span> <span class="o">=</span> <span class="n">fib</span><span class="p">[:</span><span class="n">N_max</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="k">if</span> <span class="n">N_max</span><span class="o">&gt;</span><span class="mi">2</span> <span class="k">else</span> <span class="p">[]</span>
+
+    <span class="n">step</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">method</span><span class="o">=</span><span class="s1">&#39;update&#39;</span><span class="p">,</span>
+        <span class="n">args</span><span class="o">=</span><span class="p">[{</span><span class="s1">&#39;x&#39;</span><span class="p">:[</span><span class="n">x_an</span><span class="p">,</span> <span class="n">x_an1</span><span class="p">,</span> <span class="n">x_an2</span><span class="p">],</span>
+               <span class="s1">&#39;y&#39;</span><span class="p">:[</span><span class="n">y_an</span><span class="p">,</span> <span class="n">y_an1</span><span class="p">,</span> <span class="n">y_an2</span><span class="p">]}],</span>
+        <span class="n">label</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">N_max</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">steps</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">step</span><span class="p">)</span>
+
+<span class="n">sliders</span> <span class="o">=</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span><span class="n">active</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;t&quot;</span><span class="p">:</span><span class="mi">50</span><span class="p">},</span> <span class="n">steps</span><span class="o">=</span><span class="n">steps</span><span class="p">,</span> <span class="n">currentvalue</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;prefix&quot;</span><span class="p">:</span><span class="s2">&quot;N_max = &quot;</span><span class="p">})]</span>
+
+<span class="c1"># Layout</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">autosize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">sliders</span><span class="o">=</span><span class="n">sliders</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Sucesión Fibonacci con a_{n-1} y a_{n-2}&#39;</span><span class="p">,</span>
+    <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;n&#39;</span><span class="p">,</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Valor&#39;</span><span class="p">,</span>
+    <span class="n">template</span><span class="o">=</span><span class="s1">&#39;plotly_white&#39;</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">write_html</span><span class="p">(</span>
+    <span class="sa">r</span><span class="s1">&#39;_build/html/7sucesion_fibonacci.html&#39;</span><span class="p">,</span>
+    <span class="n">include_plotlyjs</span><span class="o">=</span><span class="s1">&#39;cdn&#39;</span><span class="p">,</span>
+    <span class="n">full_html</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+<section id="numero-aureo">
+<h3>numero aureo<a class="headerlink" href="#numero-aureo" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">fractions</span><span class="w"> </span><span class="kn">import</span> <span class="n">Fraction</span>
+
+<span class="c1"># Función Fibonacci</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+        <span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="c1"># Número máximo de términos</span>
+<span class="n">N_max</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">a_full</span> <span class="o">=</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">N_max</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">phi</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="n">n_vals_total</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N_max</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Crear figura</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+
+<span class="c1"># Inicialmente mostrar todos los términos</span>
+<span class="n">b_vals_frac_init</span> <span class="o">=</span> <span class="p">[</span><span class="n">Fraction</span><span class="p">(</span><span class="n">a_full</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">a_full</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N_max</span><span class="p">)]</span>
+<span class="n">b_vals_float_init</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">b_vals_frac_init</span><span class="p">]</span>
+<span class="n">b_labels_init</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">f</span><span class="o">.</span><span class="n">numerator</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">f</span><span class="o">.</span><span class="n">denominator</span><span class="si">}</span><span class="s2"> ≈ </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">f</span><span class="p">)</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">b_vals_frac_init</span><span class="p">]</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">n_vals_total</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">b_vals_float_init</span><span class="p">,</span>
+    <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+markers&#39;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;b_n&#39;</span><span class="p">,</span>
+    <span class="n">text</span><span class="o">=</span><span class="n">b_labels_init</span><span class="p">,</span>
+    <span class="n">hovertemplate</span><span class="o">=</span><span class="s2">&quot;n=%</span><span class="si">{x}</span><span class="s2">&lt;br&gt;b_n=%</span><span class="si">{text}</span><span class="s2">&lt;extra&gt;&lt;/extra&gt;&quot;</span><span class="p">,</span>
+    <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="p">))</span>
+
+<span class="c1"># Línea del número áureo</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">n_vals_total</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="n">phi</span><span class="p">]</span><span class="o">*</span><span class="n">N_max</span><span class="p">,</span>
+    <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;φ&#39;</span><span class="p">,</span>
+    <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">dash</span><span class="o">=</span><span class="s1">&#39;dash&#39;</span><span class="p">)</span>
+<span class="p">))</span>
+
+<span class="c1"># Crear pasos para el slider</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">N</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">N_max</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">b_frac</span> <span class="o">=</span> <span class="p">[</span><span class="n">Fraction</span><span class="p">(</span><span class="n">a_full</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">a_full</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
+    <span class="n">b_float</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">b_frac</span><span class="p">]</span>
+    <span class="n">b_labels</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">f</span><span class="o">.</span><span class="n">numerator</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">f</span><span class="o">.</span><span class="n">denominator</span><span class="si">}</span><span class="s2"> ≈ </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">f</span><span class="p">)</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">b_frac</span><span class="p">]</span>
+    
+    <span class="n">step</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">method</span><span class="o">=</span><span class="s1">&#39;update&#39;</span><span class="p">,</span>
+        <span class="n">args</span><span class="o">=</span><span class="p">[{</span>
+            <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">n_vals_total</span><span class="p">[:</span><span class="n">N</span><span class="p">],</span> <span class="n">n_vals_total</span><span class="p">[:</span><span class="n">N</span><span class="p">]],</span>
+            <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">b_float</span><span class="p">,</span> <span class="p">[</span><span class="n">phi</span><span class="p">]</span><span class="o">*</span><span class="n">N</span><span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s1">&#39;trace&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+            <span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">b_labels</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span>
+        <span class="p">}],</span>
+        <span class="n">label</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">steps</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">step</span><span class="p">)</span>
+
+<span class="c1"># Agregar slider</span>
+<span class="n">sliders</span> <span class="o">=</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span>
+    <span class="n">active</span><span class="o">=</span><span class="n">N_max</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">currentvalue</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;prefix&quot;</span><span class="p">:</span><span class="s2">&quot;Número de términos: &quot;</span><span class="p">},</span>
+    <span class="n">pad</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;t&quot;</span><span class="p">:</span><span class="mi">50</span><span class="p">},</span>
+    <span class="n">steps</span><span class="o">=</span><span class="n">steps</span>
+<span class="p">)]</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">autosize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">sliders</span><span class="o">=</span><span class="n">sliders</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Convergencia de bₙ = aₙ₊₁ / aₙ al número áureo φ = (1+√5)/2 ≈ 1.618&quot;</span><span class="p">,</span>
+    <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;n&#39;</span><span class="p">,</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;bₙ &#39;</span><span class="p">,</span>
+    <span class="n">template</span><span class="o">=</span><span class="s1">&#39;plotly_white&#39;</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">write_html</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;_build/html/7numeroaureo.html&quot;</span><span class="p">,</span>
+               <span class="n">include_plotlyjs</span><span class="o">=</span><span class="s1">&#39;cdn&#39;</span><span class="p">,</span>
+               <span class="n">full_html</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Calculo2024ej6.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Calculo2024</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Calculo2024ej8.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Calculo2024</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pregunta7">Pregunta7</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#desarrollo">Desarrollo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-demuestre-que-la-sucesion-a-n-es-creciente-y-argumente-por-que-no-es-convergente">a) Demuestre que la sucesión <span class="math notranslate nohighlight">\(\{a_n\}\)</span> es creciente y argumente por qué no es convergente.</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-1-casos-base">Paso 1: Casos base</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-2-hipotesis-inductiva">Paso 2: Hipótesis inductiva</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-3-paso-inductivo">Paso 3: Paso inductivo</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion"><strong>Conclusión</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico-sucesion-a-n-fibonacci">Gráfico Sucesión <span class="math notranslate nohighlight">\(a_n\)</span> fibonacci</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-calculo-de-los-primeros-7-terminos-de-la-sucesion-b-n-frac-a-n-1-a-n">b) Cálculo de los primeros 7 términos de la sucesión <span class="math notranslate nohighlight">\(b_n = \frac{a_{n+1}}{a_n}\)</span></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-1-calcular-los-terminos-a-3-a-a-8">Paso 1: Calcular los términos <span class="math notranslate nohighlight">\(a_3\)</span> a <span class="math notranslate nohighlight">\(a_8\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-2-calcular-los-terminos-b-n">Paso 2: Calcular los términos <span class="math notranslate nohighlight">\(b_n\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-convergencia-de-b-n">c) Convergencia de <span class="math notranslate nohighlight">\(b_n\)</span></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-1-recordemos-la-relacion-de-recurrencia-para-b-n">Paso 1: Recordemos la relación de recurrencia para <span class="math notranslate nohighlight">\(b_n\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-2-suposicion-de-convergencia-y-uso-de-continuidad">Paso 2: Suposición de convergencia y uso de continuidad</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-demostracion">d) Demostración</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-1-obtener-una-relacion-para-b-n">Paso 1: Obtener una relación para <span class="math notranslate nohighlight">\(b_n\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-2-suponemos-que-el-limite-existe">Paso 2: Suponemos que el límite existe</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-3-resolver-la-ecuacion-para-l">Paso 3: Resolver la ecuación para <span class="math notranslate nohighlight">\(L\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-4-solucion-de-la-ecuacion-cuadratica">Paso 4: Solución de la ecuación cuadrática</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-5-elegir-la-solucion-correcta">Paso 5: Elegir la solución correcta</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>Conclusión:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico-limite-sucesion">gráfico limite sucesion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codigos">Códigos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sucesion-fibonacci">sucesión fibonacci</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numero-aureo">numero aureo</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Sebastian Menares
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

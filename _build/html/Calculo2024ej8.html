@@ -1,0 +1,976 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Calculo2024 &#8212; Guia CALCULO 2024</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Calculo2024ej8';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Calculo2024" href="Calculo2024ej7.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/integrales.jpeg" class="logo__image only-light" alt="Guia CALCULO 2024 - Home"/>
+    <script>document.write(`<img src="_static/integrales.jpeg" class="logo__image only-dark" alt="Guia CALCULO 2024 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Guía de Ejercicios de Cálculo
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Calculo2024ej1.html">Ejercicio 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Calculo2024ej2.html">Ejercicio 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Calculo2024ej3.html">Ejercicio 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Calculo2024ej4.html">Ejercicio 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Calculo2024ej5.html">Ejercicio 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Calculo2024ej6.html">Ejercicio 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Calculo2024ej7.html">Ejercicio 7</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Ejercicio 8</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/sebaspatric/guia24" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/sebaspatric/guia24/issues/new?title=Issue%20on%20page%20%2FCalculo2024ej8.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Calculo2024ej8.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Calculo2024</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pregunta8">Pregunta8</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-8-aproximacion-de-una-integral-con-la-regla-del-trapecio"><strong>Problema 8: Aproximación de una integral con la regla del trapecio</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#desarrollo">Desarrollo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-1-regla-del-trapecio">Paso 1: Regla del trapecio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-2-parametros-y-puntos">Paso 2: Parámetros y puntos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-3-evaluacion-de-la-funcion-f-x-e-x-2">Paso 3: Evaluación de la función <span class="math notranslate nohighlight">\(f(x) = e^{-x^2}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-4-aplicar-la-regla-del-trapecio">Paso 4: Aplicar la regla del trapecio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-5-valor-exacto-usando-la-funcion-error">Paso 5: Valor exacto usando la función error</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-6-calculo-numerico-del-valor-exacto">Paso 6: Cálculo numérico del valor exacto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-7-comparacion-y-analisis-de-error">Paso 7: Comparación y análisis de error</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-final"><strong>Conclusión final</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico">Gráfico</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#por-que-se-usa"><strong>¿Por qué se usa?</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cuando-se-aplica"><strong>¿Cuándo se aplica?</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ventajas-y-desventajas"><strong>Ventajas y desventajas</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#en-resumen">En resumen</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codigo">Código</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="calculo2024">
+<h1>Calculo2024<a class="headerlink" href="#calculo2024" title="Link to this heading">#</a></h1>
+<section id="pregunta8">
+<h2>Pregunta8<a class="headerlink" href="#pregunta8" title="Link to this heading">#</a></h2>
+<section id="problema-8-aproximacion-de-una-integral-con-la-regla-del-trapecio">
+<h3><strong>Problema 8: Aproximación de una integral con la regla del trapecio</strong><a class="headerlink" href="#problema-8-aproximacion-de-una-integral-con-la-regla-del-trapecio" title="Link to this heading">#</a></h3>
+<p>Utilice la <strong>regla del trapecio</strong> con <span class="math notranslate nohighlight">\(n = 5\)</span> para aproximar la siguiente integral:</p>
+<div class="math notranslate nohighlight">
+\[
+I = \int_{-1/2}^{1/2} e^{-x^2} \, dx
+\]</div>
+<p>Además, determine si dicha aproximación es <strong>por exceso o por defecto</strong>.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="desarrollo">
+<h2>Desarrollo<a class="headerlink" href="#desarrollo" title="Link to this heading">#</a></h2>
+<p>Aproximar la integral</p>
+<div class="math notranslate nohighlight">
+\[
+I = \int_{-1/2}^{1/2} e^{-x^2} \, dx
+\]</div>
+<p>usando la <strong>regla del trapecio con <span class="math notranslate nohighlight">\(n=5\)</span> subintervalos</strong>.</p>
+<hr class="docutils" />
+<section id="paso-1-regla-del-trapecio">
+<h3>Paso 1: Regla del trapecio<a class="headerlink" href="#paso-1-regla-del-trapecio" title="Link to this heading">#</a></h3>
+<p>La regla del trapecio para <span class="math notranslate nohighlight">\(n\)</span> subintervalos es:</p>
+<div class="math notranslate nohighlight">
+\[
+\int_a^b f(x) dx \approx \frac{h}{2} \left[ f(x_0) + 2 \sum_{i=1}^{n-1} f(x_i) + f(x_n) \right]
+\]</div>
+<p>donde</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(h = \frac{b-a}{n}\)</span> es el ancho de cada subintervalo,</p></li>
+<li><p><span class="math notranslate nohighlight">\(x_i = a + i h\)</span>, <span class="math notranslate nohighlight">\(i=0,\dots,n\)</span>.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="paso-2-parametros-y-puntos">
+<h3>Paso 2: Parámetros y puntos<a class="headerlink" href="#paso-2-parametros-y-puntos" title="Link to this heading">#</a></h3>
+<p>Dado:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(a = -\frac{1}{2} = -0.5\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(b = \frac{1}{2} = 0.5\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(n = 5\)</span>.</p></li>
+</ul>
+<p>Calculamos el ancho:</p>
+<div class="math notranslate nohighlight">
+\[
+h = \frac{0.5 - (-0.5)}{5} = \frac{1}{5} = 0.2
+\]</div>
+<p>Los nodos son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+x_0 &amp;= -0.5 \\
+x_1 &amp;= -0.3 \\
+x_2 &amp;= -0.1 \\
+x_3 &amp;= 0.1 \\
+x_4 &amp;= 0.3 \\
+x_5 &amp;= 0.5
+\end{aligned}
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="paso-3-evaluacion-de-la-funcion-f-x-e-x-2">
+<h3>Paso 3: Evaluación de la función <span class="math notranslate nohighlight">\(f(x) = e^{-x^2}\)</span><a class="headerlink" href="#paso-3-evaluacion-de-la-funcion-f-x-e-x-2" title="Link to this heading">#</a></h3>
+<p>Calculamos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+f(x_0) &amp;= e^{-(-0.5)^2} = e^{-0.25} \approx 0.7788 \\
+f(x_1) &amp;= e^{-(-0.3)^2} = e^{-0.09} \approx 0.9139 \\
+f(x_2) &amp;= e^{-(-0.1)^2} = e^{-0.01} \approx 0.9900 \\
+f(x_3) &amp;= e^{-(0.1)^2} = e^{-0.01} \approx 0.9900 \\
+f(x_4) &amp;= e^{-(0.3)^2} = e^{-0.09} \approx 0.9139 \\
+f(x_5) &amp;= e^{-(0.5)^2} = e^{-0.25} \approx 0.7788
+\end{aligned}
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="paso-4-aplicar-la-regla-del-trapecio">
+<h3>Paso 4: Aplicar la regla del trapecio<a class="headerlink" href="#paso-4-aplicar-la-regla-del-trapecio" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+I \approx \frac{h}{2} \left[ f(x_0) + 2(f(x_1) + f(x_2) + f(x_3) + f(x_4)) + f(x_5) \right]
+\]</div>
+<p>Sustituimos:</p>
+<div class="math notranslate nohighlight">
+\[
+I \approx \frac{0.2}{2} \left[ 0.7788 + 2(0.9139 + 0.9900 + 0.9900 + 0.9139) + 0.7788 \right]
+\]</div>
+<p>Calculamos la suma interna:</p>
+<div class="math notranslate nohighlight">
+\[
+0.9139 + 0.9900 + 0.9900 + 0.9139 = 3.8078
+\]</div>
+<p>Multiplicamos por 2:</p>
+<div class="math notranslate nohighlight">
+\[
+2 \times 3.8078 = 7.6156
+\]</div>
+<p>Sumamos extremos:</p>
+<div class="math notranslate nohighlight">
+\[
+0.7788 + 7.6156 + 0.7788 = 9.1732
+\]</div>
+<p>Multiplicamos por <span class="math notranslate nohighlight">\(\frac{h}{2} = 0.1\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+I \approx 0.1 \times 9.1732 = 0.9173
+\]</div>
+</section>
+<hr class="docutils" />
+<section id="paso-5-valor-exacto-usando-la-funcion-error">
+<h3>Paso 5: Valor exacto usando la función error<a class="headerlink" href="#paso-5-valor-exacto-usando-la-funcion-error" title="Link to this heading">#</a></h3>
+<p>La función <span class="math notranslate nohighlight">\(e^{-x^2}\)</span> no tiene antiderivada elemental, pero se relaciona con la función error:</p>
+<div class="math notranslate nohighlight">
+\[
+\operatorname{erf}(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} dt
+\]</div>
+<p>De aquí,</p>
+<div class="math notranslate nohighlight">
+\[
+\int_0^a e^{-t^2} dt = \frac{\sqrt{\pi}}{2} \operatorname{erf}(a)
+\]</div>
+<p>Por ser <span class="math notranslate nohighlight">\(e^{-x^2}\)</span> una función par,</p>
+<div class="math notranslate nohighlight">
+\[
+\int_{-a}^a e^{-x^2} dx = 2 \int_0^a e^{-x^2} dx = \sqrt{\pi} \operatorname{erf}(a)
+\]</div>
+<p>Con <span class="math notranslate nohighlight">\(a = 0.5\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+I = \sqrt{\pi} \operatorname{erf}(0.5)
+\]</div>
+</section>
+<hr class="docutils" />
+<section id="paso-6-calculo-numerico-del-valor-exacto">
+<h3>Paso 6: Cálculo numérico del valor exacto<a class="headerlink" href="#paso-6-calculo-numerico-del-valor-exacto" title="Link to this heading">#</a></h3>
+<p>Sabemos:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\sqrt{\pi} \approx 1.77245385\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\operatorname{erf}(0.5) \approx 0.52049988\)</span>.</p></li>
+</ul>
+<p>Entonces:</p>
+<div class="math notranslate nohighlight">
+\[
+I \approx 1.77245385 \times 0.52049988 = 0.922137
+\]</div>
+</section>
+<hr class="docutils" />
+<section id="paso-7-comparacion-y-analisis-de-error">
+<h3>Paso 7: Comparación y análisis de error<a class="headerlink" href="#paso-7-comparacion-y-analisis-de-error" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Valor aproximado (trapecio)</p></th>
+<th class="head"><p>Valor exacto (función error)</p></th>
+<th class="head"><p>Diferencia</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0.9173</p></td>
+<td><p>0.922137</p></td>
+<td><p>-0.004837</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>La función <span class="math notranslate nohighlight">\(f(x)\)</span> es cóncava hacia abajo en <span class="math notranslate nohighlight">\([-0.5,0.5]\)</span>, por lo que la regla del trapecio subestima la integral. Esto coincide con que el valor aproximado es menor que el valor exacto.</p>
+</section>
+<hr class="docutils" />
+<section id="conclusion-final">
+<h3><strong>Conclusión final</strong><a class="headerlink" href="#conclusion-final" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\boxed{
+\begin{cases}
+\text{Aproximación por regla del trapecio} = 0.9173 \\
+\text{Valor exacto (numérico)} = 0.9221 \\
+\text{Error: por defecto (subestimación)}
+\end{cases}
+}
+\end{split}\]</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="grafico">
+<h2>Gráfico<a class="headerlink" href="#grafico" title="Link to this heading">#</a></h2>
+<p><a class="reference download internal" download="" href="_downloads/5e41d3ef6632a2e3594543f0eaa9af50/trapecio.html"><span class="xref download myst">Ver gráfico interactivo</span></a></p>
+<p><a class="reference external" href="https://mybinder.org/v2/gh/sebaspatric/guia24/HEAD?labpath=Calculo2024ej8.ipynb">🔗 Abrir libro de trabajo</a></p>
+<iframe src="trapecio.html" width="800" height="600"></iframe><section id="por-que-se-usa">
+<h3><strong>¿Por qué se usa?</strong><a class="headerlink" href="#por-que-se-usa" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>No se puede encontrar una primitiva (antiderivada) exacta:</strong></p>
+<ul class="simple">
+<li><p>Algunas funciones, como <span class="math notranslate nohighlight">\(e^{-x^2}\)</span>, no tienen una antiderivada elemental, por lo que <strong>no se puede integrar exactamente</strong> usando métodos analíticos.</p></li>
+<li><p>En esos casos, recurrimos a métodos numéricos como el del <strong>trapecio</strong>, <strong>Simpson</strong>, o <strong>cuadratura gaussiana</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Se necesita una estimación rápida o computacional:</strong></p>
+<ul class="simple">
+<li><p>Si estás programando o modelando y necesitas obtener rápidamente un área bajo la curva.</p></li>
+<li><p>El método del trapecio es <strong>simple de implementar</strong>, incluso sin calculadora simbólica.</p></li>
+</ul>
+</li>
+<li><p><strong>Cuando se tiene una tabla de datos en lugar de una fórmula:</strong></p>
+<ul class="simple">
+<li><p>Si tienes solo ciertos puntos <span class="math notranslate nohighlight">\((x_i, f(x_i))\)</span>, y no una función explícita.</p></li>
+<li><p>Por ejemplo, datos experimentales o mediciones físicas.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="cuando-se-aplica">
+<h3><strong>¿Cuándo se aplica?</strong><a class="headerlink" href="#cuando-se-aplica" title="Link to this heading">#</a></h3>
+<p>Aplica mejor cuando:</p>
+<ul class="simple">
+<li><p>La función es <strong>suave y continua</strong> en el intervalo.</p></li>
+<li><p>La función <strong>no oscila mucho</strong> (no tiene muchas curvaturas).</p></li>
+<li><p>El intervalo se puede dividir en partes iguales fácilmente.</p></li>
+</ul>
+<p>Se aplica a integrales definidas del tipo:</p>
+<div class="math notranslate nohighlight">
+\[
+\int_a^b f(x) \, dx
+\]</div>
+<p>donde:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f(x)\)</span> está definida y es continua en <span class="math notranslate nohighlight">\([a, b]\)</span></p></li>
+<li><p>Se divide el intervalo <span class="math notranslate nohighlight">\([a, b]\)</span> en <span class="math notranslate nohighlight">\(n\)</span> subintervalos.</p></li>
+<li><p>Se construyen <strong>trapecios</strong> entre los puntos para aproximar el área bajo la curva.</p></li>
+</ul>
+</section>
+<section id="ventajas-y-desventajas">
+<h3><strong>Ventajas y desventajas</strong><a class="headerlink" href="#ventajas-y-desventajas" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Ventajas</p></th>
+<th class="head"><p>Desventajas</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Fácil de entender y programar</p></td>
+<td><p>Menor precisión que otros métodos más avanzados (como Simpson)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Funciona con datos discretos</p></td>
+<td><p>Requiere muchos intervalos para funciones muy curvas</p></td>
+</tr>
+<tr class="row-even"><td><p>Útil cuando no hay antiderivada analítica</p></td>
+<td><p>Puede tener error significativo si la función es muy cóncava o convexa</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="en-resumen">
+<h3>En resumen<a class="headerlink" href="#en-resumen" title="Link to this heading">#</a></h3>
+<blockquote>
+<div><p>El <strong>método del trapecio</strong> se aplica cuando:</p>
+<ul class="simple">
+<li><p>No se puede integrar simbólicamente una función.</p></li>
+<li><p>Se tienen datos discretos (no una fórmula explícita).</p></li>
+<li><p>Se busca una estimación rápida y razonablemente precisa del valor de una integral definida.</p></li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+<section id="codigo">
+<h2>Código<a class="headerlink" href="#codigo" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
+
+<span class="c1"># Función a integrar</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span>
+<span class="n">x_fine</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">y_fine</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x_fine</span><span class="p">)</span>
+<span class="n">area_real</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">y_fine</span><span class="p">,</span> <span class="n">x_fine</span><span class="p">)</span>
+<span class="n">N_max</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+
+<span class="c1"># Área real</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">x_fine</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y_fine</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="s1">&#39;tozeroy&#39;</span><span class="p">,</span>
+    <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">),</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Área real&#39;</span>
+<span class="p">))</span>
+
+<span class="c1"># Nodos conectados</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="p">[],</span> <span class="n">y</span><span class="o">=</span><span class="p">[],</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines+markers&#39;</span><span class="p">,</span>
+    <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span>
+    <span class="n">marker</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">8</span><span class="p">),</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Nodos&#39;</span>
+<span class="p">))</span>
+
+<span class="c1"># Textos de trapecios</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="p">[],</span> <span class="n">y</span><span class="o">=</span><span class="p">[],</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="p">[],</span> <span class="n">textposition</span><span class="o">=</span><span class="s1">&#39;top center&#39;</span><span class="p">,</span>
+    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">))</span>
+
+<span class="c1"># Área total</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="p">[(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="nb">max</span><span class="p">(</span><span class="n">y_fine</span><span class="p">)</span><span class="o">*</span><span class="mf">1.2</span><span class="p">],</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">],</span> 
+    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">textfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="p">))</span>
+
+<span class="c1"># Precrear N_max traces para trapecios</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N_max</span><span class="p">):</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+        <span class="n">x</span><span class="o">=</span><span class="p">[],</span> <span class="n">y</span><span class="o">=</span><span class="p">[],</span> <span class="n">fill</span><span class="o">=</span><span class="s1">&#39;toself&#39;</span><span class="p">,</span> <span class="n">fillcolor</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span>
+        <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">),</span> <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Trapecio&#39;</span>
+    <span class="p">))</span>
+
+<span class="c1"># Crear steps del slider</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N_max</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">x_nodes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">y_nodes</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x_nodes</span><span class="p">)</span>
+    
+    <span class="c1"># Trapecios</span>
+    <span class="n">trap_texts</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">text_x</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">text_y</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">area_total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">trap_x</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">trap_y</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">x0</span><span class="p">,</span> <span class="n">x1</span> <span class="o">=</span> <span class="n">x_nodes</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">x_nodes</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">y0</span><span class="p">,</span> <span class="n">y1</span> <span class="o">=</span> <span class="n">y_nodes</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">y_nodes</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">area_trap</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="p">(</span><span class="n">y0</span> <span class="o">+</span> <span class="n">y1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">x1</span> <span class="o">-</span> <span class="n">x0</span><span class="p">)</span>
+        <span class="n">area_total</span> <span class="o">+=</span> <span class="n">area_trap</span>
+        <span class="n">xs</span> <span class="o">=</span> <span class="p">[</span><span class="n">x0</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">x0</span><span class="p">]</span>
+        <span class="n">ys</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+        <span class="n">trap_x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span>
+        <span class="n">trap_y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ys</span><span class="p">)</span>
+        <span class="n">text_x</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">x0</span><span class="o">+</span><span class="n">x1</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">text_y</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">y0</span><span class="o">+</span><span class="n">y1</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">trap_texts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">area_trap</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Líneas divisorias</span>
+    <span class="n">shapes</span> <span class="o">=</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;line&quot;</span><span class="p">,</span>
+        <span class="n">x0</span><span class="o">=</span><span class="n">xi</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="n">xi</span><span class="p">,</span>
+        <span class="n">y0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y1</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">y_fine</span><span class="p">)</span><span class="o">*</span><span class="mf">1.35</span><span class="p">,</span>
+        <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">dash</span><span class="o">=</span><span class="s2">&quot;dot&quot;</span><span class="p">),</span>
+        <span class="n">layer</span><span class="o">=</span><span class="s2">&quot;above&quot;</span>
+    <span class="p">)</span> <span class="k">for</span> <span class="n">xi</span> <span class="ow">in</span> <span class="n">x_nodes</span><span class="p">]</span>
+
+    <span class="c1"># Step del slider</span>
+    <span class="n">step</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">method</span><span class="o">=</span><span class="s2">&quot;update&quot;</span><span class="p">,</span>
+        <span class="n">args</span><span class="o">=</span><span class="p">[{</span>
+            <span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">x_fine</span><span class="p">,</span> <span class="n">x_nodes</span><span class="p">,</span> <span class="n">text_x</span><span class="p">,</span> <span class="p">[(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">]]</span> <span class="o">+</span> <span class="n">trap_x</span> <span class="o">+</span> <span class="p">[[]]</span><span class="o">*</span><span class="p">(</span><span class="n">N_max</span><span class="o">-</span><span class="n">n</span><span class="p">),</span>
+            <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">y_fine</span><span class="p">,</span> <span class="n">y_nodes</span><span class="p">,</span> <span class="n">text_y</span><span class="p">,</span> <span class="p">[</span><span class="nb">max</span><span class="p">(</span><span class="n">y_fine</span><span class="p">)</span><span class="o">*</span><span class="mf">1.2</span><span class="p">]]</span> <span class="o">+</span> <span class="n">trap_y</span> <span class="o">+</span> <span class="p">[[]]</span><span class="o">*</span><span class="p">(</span><span class="n">N_max</span><span class="o">-</span><span class="n">n</span><span class="p">),</span>
+            <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;Área real ≈ </span><span class="si">{</span><span class="n">area_real</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">x_fine</span><span class="p">),</span>
+                <span class="kc">None</span><span class="p">,</span>
+                <span class="n">trap_texts</span><span class="p">,</span>
+                <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;Área total trapecios ≈ </span><span class="si">{</span><span class="n">area_total</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span>
+            <span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="kc">None</span><span class="p">]</span><span class="o">*</span><span class="n">N_max</span>
+        <span class="p">},</span>
+        <span class="p">{</span><span class="s2">&quot;shapes&quot;</span><span class="p">:</span> <span class="n">shapes</span><span class="p">}],</span>
+        <span class="n">label</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">steps</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">step</span><span class="p">)</span>
+
+<span class="c1"># Slider</span>
+<span class="n">sliders</span> <span class="o">=</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span>
+    <span class="n">active</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+    <span class="n">currentvalue</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;prefix&quot;</span><span class="p">:</span> <span class="s2">&quot;Número de trapecios: &quot;</span><span class="p">},</span>
+    <span class="n">pad</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;t&quot;</span><span class="p">:</span><span class="mi">50</span><span class="p">},</span>
+    <span class="n">steps</span><span class="o">=</span><span class="n">steps</span>
+<span class="p">)]</span>
+
+<span class="c1"># Layout final</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">autosize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">sliders</span><span class="o">=</span><span class="n">sliders</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Área bajo f(x) ≈ exp(-x²) usando regla del trapecio&quot;</span><span class="p">,</span>
+    <span class="n">xaxis_title</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s2">&quot;f(x)&quot;</span><span class="p">,</span>
+    <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">y_fine</span><span class="p">)</span><span class="o">*</span><span class="mf">1.4</span><span class="p">]),</span>
+    <span class="n">height</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">template</span><span class="o">=</span><span class="s2">&quot;plotly_white&quot;</span><span class="p">,</span>
+    <span class="n">annotations</span><span class="o">=</span><span class="p">[</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">x</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.08</span><span class="p">,</span> <span class="n">xref</span><span class="o">=</span><span class="s2">&quot;paper&quot;</span><span class="p">,</span> <span class="n">yref</span><span class="o">=</span><span class="s2">&quot;paper&quot;</span><span class="p">,</span>
+        <span class="n">text</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Área real ≈ </span><span class="si">{</span><span class="n">area_real</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+    <span class="p">)]</span>
+<span class="p">)</span>
+
+<span class="c1"># Guardar HTML</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">write_html</span><span class="p">(</span>
+    <span class="s2">&quot;_build/html/trapecio.html&quot;</span><span class="p">,</span>
+    <span class="n">include_plotlyjs</span><span class="o">=</span><span class="s2">&quot;cdn&quot;</span><span class="p">,</span>
+    <span class="n">full_html</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">auto_open</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\sebas\AppData\Local\Temp\ipykernel_20700\477774183.py:11: DeprecationWarning:
+
+`trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Calculo2024ej7.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Calculo2024</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pregunta8">Pregunta8</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-8-aproximacion-de-una-integral-con-la-regla-del-trapecio"><strong>Problema 8: Aproximación de una integral con la regla del trapecio</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#desarrollo">Desarrollo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-1-regla-del-trapecio">Paso 1: Regla del trapecio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-2-parametros-y-puntos">Paso 2: Parámetros y puntos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-3-evaluacion-de-la-funcion-f-x-e-x-2">Paso 3: Evaluación de la función <span class="math notranslate nohighlight">\(f(x) = e^{-x^2}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-4-aplicar-la-regla-del-trapecio">Paso 4: Aplicar la regla del trapecio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-5-valor-exacto-usando-la-funcion-error">Paso 5: Valor exacto usando la función error</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-6-calculo-numerico-del-valor-exacto">Paso 6: Cálculo numérico del valor exacto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-7-comparacion-y-analisis-de-error">Paso 7: Comparación y análisis de error</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-final"><strong>Conclusión final</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico">Gráfico</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#por-que-se-usa"><strong>¿Por qué se usa?</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cuando-se-aplica"><strong>¿Cuándo se aplica?</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ventajas-y-desventajas"><strong>Ventajas y desventajas</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#en-resumen">En resumen</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codigo">Código</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Sebastian Menares
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
